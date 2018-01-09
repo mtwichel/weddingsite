@@ -1,0 +1,38 @@
+.bg {
+  background: url('https://lh3.googleusercontent.com/xtp8RGW9woZPNCtby7FNpNNO3JHX01gbmd2MjFUWcUbs2YxsL80oud2ZGR2lqKo3NrXwV2yAQVhR3ebKxBkTwp2BvrTwQruZBojiCV8lfZ1bbla822ndco547om8uoemLysiRATdkbkmDzkvBi5bgCYYygOmlxvKRIJGyVQT6Wg9W-x0YT-UFkUo4gKFeMYHVIyalqBVGY_49unHHgxCuvOsOPLw5lDK691QavRo-IRgIOWgLvBenCfwrm4tjvt61TA8puTpUzyKqI_-o7UvKjgNXVpPPSpGSHVCSBq4vZgoPpqDHe2X_F0qcJOA6yJQC8Uc58vEUgmJbxcfbHnuxGSb_qGjArvbfIp77o6zTFtibWHpTiJOAfow7k_SDqgSytZ8gAXr8crXpGvwFM_JaQHoD9P_mhaoM3YYCqwcP9J8aSZxNXapVd5RfD-1x-CV9VbVMeGRa4WZLkGja7ApXqg1zTl2i7We1tSACFpKD65UM_lw7WJ34U7UT-JPsWK_wNIbcTucfejsmB4OCi05cBbdkyH7ePajo5d9ZEVKoCo1LcAXQjFogxKMTKekY3vNzu0vfpAE1Z8P35SPRJOdC6BVI-u1eZTiz8K6IFO5=w1774-h1129-no') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 800px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+
+
+  -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+
+
+
+}
+
+#hero {
+  height: 600px;
+  color: white;
+  text-align: center;
+  text-shadow: #444 0 1px 1px;
+  margin-top: 200px;
+  background:transparent;
+}
+
+.jumbotron .display-3{
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+}
+.jumbotron .display-2{
+  font-family: 'Merriweather', serif;
+  font-size: 6em;
+}
+
+.jumbotron .lead{
+  font-size: 3em;
+}
