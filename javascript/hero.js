@@ -7,3 +7,7 @@ function parallax(){
 $(window).scroll(function(e){
     parallax();
 });
+
+$('.navbar').affix({
+  offset: {top: 100}
+});
