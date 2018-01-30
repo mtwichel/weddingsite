@@ -1,0 +1,49 @@
+#ceremony {
+  background-color: #1e1e35;
+  color: #FFFFFF;
+  padding: 2rem 2rem;
+}
+
+#welcome{
+  padding-bottom: 2rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+#timer{
+  padding-top: 2rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+#top-left {
+  border-right: 1px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-top: 0px;
+  border-style: solid;
+  border-color: #FFF;
+}
+
+#top-right {
+  border-right: 0px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-top: 0px;
+  border-style: solid;
+  border-color: #FFF;
+}
+#bottom-left {
+  border-right: 1px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-top: 1px;
+  border-style: solid;
+  border-color: #FFF;
+}
+#bottom-right {
+  border-right: 0px;
+  border-bottom: 0px;
+  border-left: 1px;
+  border-top: 1px;
+  border-style: solid;
+  border-color: #FFF;
+}

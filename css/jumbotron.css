@@ -1,6 +1,7 @@
 .bg {
-  background: url('https://lh3.googleusercontent.com/xtp8RGW9woZPNCtby7FNpNNO3JHX01gbmd2MjFUWcUbs2YxsL80oud2ZGR2lqKo3NrXwV2yAQVhR3ebKxBkTwp2BvrTwQruZBojiCV8lfZ1bbla822ndco547om8uoemLysiRATdkbkmDzkvBi5bgCYYygOmlxvKRIJGyVQT6Wg9W-x0YT-UFkUo4gKFeMYHVIyalqBVGY_49unHHgxCuvOsOPLw5lDK691QavRo-IRgIOWgLvBenCfwrm4tjvt61TA8puTpUzyKqI_-o7UvKjgNXVpPPSpGSHVCSBq4vZgoPpqDHe2X_F0qcJOA6yJQC8Uc58vEUgmJbxcfbHnuxGSb_qGjArvbfIp77o6zTFtibWHpTiJOAfow7k_SDqgSytZ8gAXr8crXpGvwFM_JaQHoD9P_mhaoM3YYCqwcP9J8aSZxNXapVd5RfD-1x-CV9VbVMeGRa4WZLkGja7ApXqg1zTl2i7We1tSACFpKD65UM_lw7WJ34U7UT-JPsWK_wNIbcTucfejsmB4OCi05cBbdkyH7ePajo5d9ZEVKoCo1LcAXQjFogxKMTKekY3vNzu0vfpAE1Z8P35SPRJOdC6BVI-u1eZTiz8K6IFO5=w1774-h1129-no') no-repeat center center;
+  background: url("../img/hero.jpg") no-repeat center center;
   position: fixed;
+  background-size: 100%;
   width: 100%;
   height: 800px; /*same height as jumbotron */
   top:0;

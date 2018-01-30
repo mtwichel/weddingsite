@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/profiles.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/ceremony.css">
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Merriweather|Teko:700" rel="stylesheet"></head>
   <body>
     <div></div>
@@ -36,19 +37,19 @@
             <a class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Ceremony</a>
+            <a class="nav-link" href="#ceremony-link" id="ceremony-link">Ceremony</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#our-story">Our Story</a>
+            <a class="nav-link" href="#our-story" id="our-story-link">Our Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">RSVP</a>
+            <a class="nav-link" href="#" id="rsvp-link">RSVP</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
+            <a class="nav-link" href="#" id="gallery-link">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gift Registry</a>
+            <a class="nav-link" href="#" id="registry-link">Gift Registry</a>
           </li>
 
         </ul>
@@ -85,19 +86,37 @@
         </div>
       </div>
     </div>
-    <div class="jumbotron jumbotron-fluid" id="welcome">
-      <div class="container" align = "center">
+    <div class="jumbotron jumbotron-fluid" id="ceremony">
+      <div class="container" align = "center" id="welcome">
         <h1 class="heading">We Cordially Invite You To Our Wedding</h1>
+      </div>
+      <div class="container" align = "center">
         <div class="row">
-          <div class="col-md">
+          <div class="col-md" id="top-left">
+
             <h2>Where:</h2>
             <h3>St. Thomas the Apostle Catholic Parish</h3>
+
           </div>
-          <div class="col-md">
+          <div class="col-md" id="top-right">
             <h2>When:</h2>
             <h3>June 3rd, 2019</h3>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md" id="bottom-left">
+            <h2>Reception:</h2>
+            <h3>Harper & Madison</h3>
+          </div>
+          <div class="col-md" id="bottom-right">
+            <h2>When:</h2>
+            <h3>June 3rd, 2019</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container" align = "center">
+        <h1><div id="timer"></div></h1>
+      </div>
       </div>
     </div>
 
@@ -154,8 +173,7 @@
     </div>
     <div class="jumbotron jumbotron-fluid" id="welcome">
       <div class="container" align="center">
-        <h1 class=""
-        <div id="timer"></div>
+
         </div>
       </div>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
