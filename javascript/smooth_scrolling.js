@@ -10,12 +10,12 @@ $('#our-story-link').click(function(){
 	}, 2000);
 	console.log("HI");
 });
-// $('.nav-link').click(function(){
-// 	$('html, body').animate({
-// 		scrollTop: $("#our-story").offset().top
-// 	}, 2000);
-// 	console.log("HI");
-// });
+$('#gallery-link').click(function(){
+	$('html, body').animate({
+		scrollTop: $("#gallery").offset().top
+	}, 2000);
+	console.log("HI");
+});
 // $('.nav-link').click(function(){
 // 	$('html, body').animate({
 // 		scrollTop: $("#our-story").offset().top
