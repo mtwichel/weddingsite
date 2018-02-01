@@ -12,38 +12,67 @@
 #timer{
   padding-top: 2rem;
   font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+}
+
+.timer {
+  /* background-color: #FFF;
+  color: #1e1e35; */
+  text-align: center;
+  padding: 1rem;
+}
+
+#numbers > .text {
+  padding-top: 3rem;
+}
+
+#numbers{
+  margin: 1rem;
+}
+
+#ceremony h2{
+  font-family: 'Merriweather', serif;
+
 }
 
 #top-left {
   border-right: 1px;
-  border-bottom: 1px;
+  border-bottom: 0px;
   border-left: 0px;
   border-top: 0px;
   border-style: solid;
   border-color: #FFF;
+
+  /* text-align: left; */
 }
 
 #top-right {
   border-right: 0px;
-  border-bottom: 1px;
+  border-bottom: 0px;
   border-left: 1px;
   border-top: 0px;
   border-style: solid;
   border-color: #FFF;
+
+  /* text-align: right; */
 }
 #bottom-left {
   border-right: 1px;
   border-bottom: 0px;
   border-left: 0px;
-  border-top: 1px;
+  border-top: 0px;
   border-style: solid;
   border-color: #FFF;
+
+  /* text-align: left; */
 }
 #bottom-right {
   border-right: 0px;
   border-bottom: 0px;
   border-left: 1px;
-  border-top: 1px;
+  border-top: 0px;
   border-style: solid;
   border-color: #FFF;
+
+  /* text-align: right; */
 }

@@ -1,8 +1,7 @@
 var deadline ="03/06/2019"
 
 $( document ).ready(function() {
-    console.log( "ready!" );
-    initializeClock('timer', deadline);
+    initializeClock(['days', 'hours', 'minutes', 'seconds'], deadline);
 });
 
 
@@ -21,15 +20,20 @@ function getTimeRemaining(endtime){
   };
 }
 
-function initializeClock(id, endtime){
-  var clock = document.getElementById(id);
+function initializeClock(ids, endtime){
+  var clockItems = new Array(4);
+  for(i=0; i<4; i++){
+     clockItems[i] = document.getElementById(ids[i]);
+  }
   var timeinterval = setInterval(function(){
-    var t = getTimeRemaining(endtime);
-    clock.innerHTML =  'It&#39s only ' + 
-                      t.days  + '  Days, '
-                      + t.hours + '  Hours, '
-                       + t.minutes + '  Minutes and '
-                       + t.seconds + '  Seconds Away ';
+  var t = getTimeRemaining(endtime);
+    clockItems[0].innerHTML = t.days;
+    clockItems[1].innerHTML = t.hours;
+    clockItems[2].innerHTML = t.minutes;
+    clockItems[3].innerHTML = t.seconds;
+
+
+
     if(t.total<=0){
       clearInterval(timeinterval);
     }
