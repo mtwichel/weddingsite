@@ -1,7 +1,6 @@
 .bg {
-  background: url("../img/hero.jpg") no-repeat center center;
+  background: url("../img/hero_small.jpeg") no-repeat center center;
   position: fixed;
-  background-size: 100%;
   width: 100%;
   top:0;
   left:0;
@@ -10,8 +9,6 @@
 /* making triangle shape on bottom
   -webkit-clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
   clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0); */
-
-
 
 }
 
@@ -27,13 +24,35 @@
 
 .jumbotron .display-3{
   font-family: 'Great Vibes', cursive;
-  font-size: 4em;
+  font-size: 2rem;
 }
 .jumbotron .display-2{
   font-family: 'Merriweather', serif;
-  font-size: 6em;
+  font-size: 4rem;
 }
 
 .jumbotron .lead{
-  font-size: 3em;
+  font-size: 1rem;
+}
+
+@media (min-width: 1458px) {
+  .jumbotron .display-3{
+    font-size: 4rem;
+  }
+  .jumbotron .display-2{
+    font-size: 6rem;
+  }
+
+  .jumbotron .lead{
+    font-size: 3rem;
+  }
+  .bg{
+    background: url("../img/hero.jpg") no-repeat center center;
+    /* position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: -1; */
+    background-size: 100%;
+  }
 }
