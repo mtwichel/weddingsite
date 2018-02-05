@@ -22,9 +22,9 @@ $('#gallery-link').click(function(){
 // 	}, 2000);
 // 	console.log("HI");
 // });
-// $('.nav-link').click(function(){
-// 	$('html, body').animate({
-// 		scrollTop: $("#our-story").offset().top
-// 	}, 2000);
-// 	console.log("HI");
-// });
+$('#registry-link').click(function(){
+	$('html, body').animate({
+		scrollTop: $("#registry").offset().top
+	}, 2000);
+	console.log("HI");
+});
