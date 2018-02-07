@@ -56,3 +56,16 @@
     background-size: 100%;
   }
 }
+
+@media (min-width: 768px) {
+  .jumbotron .display-3{
+    font-size: 4rem;
+  }
+  .jumbotron .display-2{
+    font-size: 6rem;
+  }
+
+  .jumbotron .lead{
+    font-size: 3rem;
+  }
+}

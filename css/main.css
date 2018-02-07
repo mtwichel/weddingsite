@@ -1,1 +1,11 @@
+.fancy {
+  padding-bottom: 2rem;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  padding-top: 32px;
+}
 
+.profile-img {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}

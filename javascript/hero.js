@@ -22,6 +22,8 @@ function resizeWindow(){
   $('#hero').css('height', jumboHeight + 'px');
   $('#hero').css('margin-top', windowMargin + 'px');
   $('.bg').css('height', (jumboHeight+windowMargin) + 'px');
+
+  parallax();
 }
 $(window).resize(function(){
     resizeWindow();
