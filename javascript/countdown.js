@@ -1,4 +1,4 @@
-var deadline ="03/06/2019"
+var deadline ="06/18/2019"
 
 $( document ).ready(function() {
     initializeClock(['days', 'hours', 'minutes', 'seconds'], deadline);
@@ -27,10 +27,10 @@ function initializeClock(ids, endtime){
   }
   var timeinterval = setInterval(function(){
   var t = getTimeRemaining(endtime);
-    clockItems[0].innerHTML = t.days;
-    clockItems[1].innerHTML = t.hours;
-    clockItems[2].innerHTML = t.minutes;
-    clockItems[3].innerHTML = t.seconds;
+    clockItems[0].innerHTML = t.days + " Days";
+    clockItems[1].innerHTML = t.hours + " Hours";
+    clockItems[2].innerHTML = t.minutes + " Minutes";
+    clockItems[3].innerHTML = t.seconds + " Seconds";
 
 
 

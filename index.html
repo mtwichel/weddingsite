@@ -6,14 +6,31 @@
 
   <title>Marcus and Margaret</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
   <link rel="stylesheet" href="css/jumbotron.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/profiles.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/ceremony.css">
   <link rel="stylesheet" href="css/gallery.css">
-  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Merriweather|Teko:700" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Merriweather|Teko:700" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAXl_tM6Qsz4psHcKQO3XBjez4E4JsYzUg",
+      authDomain: "margaretmarcus-177003.firebaseapp.com",
+      databaseURL: "https://margaretmarcus-177003.firebaseio.com",
+      projectId: "margaretmarcus-177003",
+      storageBucket: "",
+      messagingSenderId: "942865769876"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+</head>
   <body>
     <div></div>
 
@@ -122,22 +139,14 @@
           <div class="col-sm timer text">
             It's Only
           </div>
-          <div class="col-sm timer">
-            <span class="timer" id="days"></span>
-            <br>Days
-          </div>
-          <div class="col-sm timer">
-            <span class="timer" id="hours"></span>
-            <br>Hours
-          </div>
-          <div class="col-sm timer">
-            <span class="timer" id="minutes"></span>
-            <br>Minutes
-          </div>
-          <div class="col-sm timer">
-            <span class="timer" id="seconds"></span>
-            <br>Seconds
-          </div>
+          <div class="col-xs timer">
+            <span class="timer" id="days"></span></div>
+          <div class="col-xs timer">
+            <span class="timer" id="hours"></span></div>
+          <div class="col-xs timer">
+            <span class="timer" id="minutes"></span></div>
+          <div class="col-xs timer">
+            <span class="timer" id="seconds"></span></div>
           <div class="col-sm timer text">
             Away!
           </div>
@@ -150,6 +159,11 @@
   <hr>
   <div class="container" id="our-story">
     <h1>Our Story</h1>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
+    dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+    Aliquam in felis sit amet . this is a test this is a test
+    <br><br>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
     Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
     dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
@@ -186,17 +200,35 @@
   </div>
 
   <div class="jumbotron jumbotron-fluid" id="registry">
-    <div class="container" align = "center" id="welcome">
+    <div class="container" align = "center">
       <h1 class="heading">We Are Registered at:</h1>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid" id="rsvp">
+    <div class="container">
+      <h1 class="heading">RSVP</h1>
+      <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="bmd-label-floating">Last Name</label>
+        <input type="email" class="form-control" id="exampleInputEmail1">
+        <button type ="button" id="search" class="btn btn-primary">Search</button>
+      </form>
+  </div>
     </div>
   </div>
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+<script src ="javascript/database.js"></script>
+
   <script src="javascript/hero.js"></script>
   <script src="javascript/smooth_scrolling.js"></script>
   <script src="javascript/countdown.js"></script>
+
 </body>
 </html>

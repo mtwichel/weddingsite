@@ -18,7 +18,6 @@ function resizeWindow(){
   windowMargin = windowHeight/5;
   jumboHeight = windowHeight-windowMargin;
 
-  console.log(windowHeight + "; " + windowMargin + "; " + jumboHeight);
   $('#hero').css('height', jumboHeight + 'px');
   $('#hero').css('margin-top', windowMargin + 'px');
   $('.bg').css('height', (jumboHeight+windowMargin) + 'px');
