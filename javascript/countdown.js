@@ -1,4 +1,4 @@
-var deadline ="06/18/2019"
+var deadline ="06/7/2019"
 
 $( document ).ready(function() {
     initializeClock(['days', 'hours', 'minutes', 'seconds'], deadline);

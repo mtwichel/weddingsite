@@ -39,7 +39,7 @@
       <div class="container" back>
         <h1 class="display-3">The Wedding Celebration of</h1>
         <h1 class="display-2">Margaret & Marcus</h1>
-        <p class="lead">June 3, 2019</p>
+        <p class="lead">June 7, 2019</p>
         <button type="button" class="btn-lg btn-light">RSVP</button>
       </div>
     </div>
@@ -209,16 +209,25 @@
     <div class="container">
       <h1 class="heading">RSVP</h1>
       <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1" class="bmd-label-floating">Last Name</label>
-        <input type="email" class="form-control" id="exampleInputEmail1">
-        <button type ="button" id="search" class="btn btn-primary">Search</button>
+        <button type ="button" id="search" class="btn btn-primary">Search for RSVP</button>
       </form>
   </div>
     </div>
   </div>
 
-
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAXl_tM6Qsz4psHcKQO3XBjez4E4JsYzUg",
+    authDomain: "margaretmarcus-177003.firebaseapp.com",
+    databaseURL: "https://margaretmarcus-177003.firebaseio.com",
+    projectId: "margaretmarcus-177003",
+    storageBucket: "margaretmarcus-177003.appspot.com",
+    messagingSenderId: "942865769876"
+  };
+  firebase.initializeApp(config);
+</script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
