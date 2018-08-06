@@ -3,24 +3,25 @@ const settings = {timestampsInSnapshots: true};
 db.settings(settings);
 
 $('#search').click(function(){
-  var test = getNotYetRsvp();
-  console.log(test);
+  getNotYetRsvp();
 });
 
 
  async function getNotYetRsvp(){
-   db.doc("rsvp/rsvpList").get()
+  var nameList = [];
 
-   .then(function(doc){
-    if(doc.exists){
-      var obj = doc.data();
-      var keys = Object.keys(obj);
-      var filtered = keys.filter(function(key) {
+   db.collection("rsvpList")
+     .where("rsvp", "==", false)
+     .get()
+
+   .then(function(querySnapshot){
+    if(!querySnapshot.empty){
+      querySnapshot.forEach(doc => {
+        nameList.push(doc.get('family-name'));
         
       });
-      return filtered;
     }else{
-      console.log("No such doc")
+      console.log("empty");
     }
   })
   
