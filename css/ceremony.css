@@ -1,5 +1,5 @@
 #ceremony {
-  background-color: #1e1e35;
+  background-color:#49525D;
   color: #FFFFFF;
   padding: 2rem 2rem;
 }
@@ -28,44 +28,47 @@
   font-family: 'Merriweather', serif;
 }
 
-#top-left {
-  border-right: 1px;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-top: 0px;
-  border-style: solid;
-  border-color: #FFF;
 
-  /* text-align: left; */
+@media (max-width: 991px) {
+  #left {
+    border-right: 0px;
+    border-bottom: 1px;
+    border-left: 0px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: #FFF;
+  }
+  
+  #right {
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: #FFF;
+  
+    /* text-align: right; */
+  }
 }
 
-#top-right {
-  border-right: 0px;
-  border-bottom: 0px;
-  border-left: 1px;
-  border-top: 0px;
-  border-style: solid;
-  border-color: #FFF;
-
-  /* text-align: right; */
-}
-#bottom-left {
-  border-right: 1px;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-top: 0px;
-  border-style: solid;
-  border-color: #FFF;
-
-  /* text-align: left; */
-}
-#bottom-right {
-  border-right: 0px;
-  border-bottom: 0px;
-  border-left: 1px;
-  border-top: 0px;
-  border-style: solid;
-  border-color: #FFF;
-
-  /* text-align: right; */
+@media (min-width: 991px) {
+  #left {
+    border-right: 1px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: #FFF;
+  }
+  
+  #right {
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 1px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: #FFF;
+  
+    /* text-align: right; */
+  }
 }

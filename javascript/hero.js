@@ -1,12 +1,14 @@
 var windowHeight;
 var windowMargin;
 var jumboHeight;
+var navbarHeight;
+var bgHeight;
 
 
 
 function parallax(){
     var scrolled = $(window).scrollTop();
-    $('.bg').css('height', (jumboHeight-scrolled+windowMargin) + 'px');
+    $('.bg').css('height', (bgHeight - scrolled) + 'px');
 }
 
 $(window).scroll(function(e){
@@ -15,12 +17,16 @@ $(window).scroll(function(e){
 
 function resizeWindow(){
   windowHeight = $(window).height();
-  windowMargin = windowHeight/5;
-  jumboHeight = windowHeight-windowMargin;
+  windowMargin = windowHeight/3; 
+  jumboHeight = windowHeight-windowMargin-17;
+  navbarHeight = $("#main-nav").height();
+  bgHeight = jumboHeight+windowMargin-navbarHeight;
 
-  $('#hero').css('height', jumboHeight + 'px');
+
+
+  $('#hero').css('height', (jumboHeight - navbarHeight) + 'px');
   $('#hero').css('margin-top', windowMargin + 'px');
-  $('.bg').css('height', (jumboHeight+windowMargin) + 'px');
+  $('.bg').css('height', bgHeight + 'px');
 
   parallax();
 }

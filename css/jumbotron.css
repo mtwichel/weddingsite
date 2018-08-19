@@ -1,5 +1,5 @@
 .bg {
-  background: url("../img/hero_small.jpeg") no-repeat center center;
+  background: url("../img/hero.jpg") no-repeat center center;
   position: fixed;
   width: 100%;
   top:0;
@@ -20,6 +20,7 @@
   margin-top: 200px;
   margin-bottom: 0px;
   background:transparent;
+  padding: 0px;
 }
 
 .jumbotron .display-3{
@@ -35,7 +36,7 @@
   font-size: 1rem;
 }
 
-@media (min-width: 1458px) {
+@media (min-width: 1155px) {
   .jumbotron .display-3{
     font-size: 4rem;
   }
@@ -48,12 +49,9 @@
   }
   .bg{
     background: url("../img/hero.jpg") no-repeat center center;
-    /* position: fixed;
-    width: 100%;
-    top:0;
-    left:0;
-    z-index: -1; */
+    position: fixed;
     background-size: 100%;
+    width: 100%;
   }
 }
 
